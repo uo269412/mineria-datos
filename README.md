@@ -2,7 +2,7 @@
 
 <h1>Instalación para ejecutar el programa </h1>
 <p>Se necesitará un intérprete de Python para poder ejecutar el programa. El utilizado ha sido Pycharm Community 2022.2.2 (aunque debería valer una versión más actual de este), descargado en el enlace oficial de descargas de Pycharm, <a href="https://www.jetbrains.com/pycharm/download/#section=windows">Enlace de descarga oficial de Pycharm</a>.</p>
-<p>También necesitaremos una versión de Python. En este caso utilizaremos la versión 3.9, que se puede encontrar en <a href="https://www.python.org/downloads/release/python-390/">Enlace de descarga oficial de Python 3.9</a>. Se recomienda descargar el Windows x86-64-web-based installer y proceder con las instrucciones para la instalación.</p>
+<p>También necesitaremos una versión de Python. En este caso utilizaremos la versión 3.9, que se puede encontrar en <a href="https://www.python.org/downloads/release/python-3100/">Enlace de descarga oficial de Python 3.10</a>. Se recomienda descargar el Windows x86-64-web-based installer y proceder con las instrucciones para la instalación.</p>
 
 
 
@@ -29,3 +29,8 @@
 </ol>
 
 <h4>Descarga de recursos</h4>
+<p>En el proyecto ya se incluyen los archivos que utilizará el programa. Independientemente, aquí se muestra el enlace de los dos archivos que usará el programa. Se tendrán que descomprimir y dejar en la raíz del proyecto:</p>
+<ul>
+  <li></li>
+  <li></li>
+ </ul>
