@@ -19,6 +19,7 @@ stopwords_spanish = set(stopwords.words('spanish'))
 
 tt = TextTilingTokenizer(stopwords=stopwords_spanish)
 segmentosTotales = list()
+referenciasNoticias = {}
 
 # Segmentamos el texto utilizando el algoritmo TextTiling
 for i in range(len(texto)):
@@ -26,16 +27,20 @@ for i in range(len(texto)):
     segments = tt.tokenize(texto[i])
   except:
     print("Esta noticia no se pudo procesar: " + texto[i])
-  print("[TT] Procesando "  + str(i) + " de un total de " + str(len(texto) - 1) +" - Texto segmentado en ",len(segments)," segmentos.")
+  print("[TT] Procesando "  + str(i) + " de un total de " + str(len(texto) - 1) +" - Texto segmentado en ",str(len(segments))," segmentos.")
 
-  for i in range(len(segments)):
-    segment = segments[i]
+  for j in range(len(segments)):
+    segment = segments[j]
     elements = segment.split("\n\n")
     for element in elements:
         if element not in segmentosTotales:
           segmentosTotales.append(element)
+          referenciasNoticias[len(segmentosTotales) - 1] = i
 
 with open('pickle/apartado2-tt/segments.pickle', 'wb') as archivo:
   pickle.dump(segmentosTotales, archivo)
+
+with open('pickle/apartado2-tt/segments-noticias.pickle', 'wb') as archivo:
+  pickle.dump(referenciasNoticias, archivo)
 
 

@@ -8,6 +8,11 @@ import pickle
 with open('pickle/apartado2-tt/segments.pickle', 'rb') as archivo:
   segments = pickle.load(archivo)
 
+with open('pickle/apartado2-tt/segments-noticias.pickle', 'rb') as archivo:
+  referenciasNoticias = pickle.load(archivo)
+
+with open('pickle/apartado1/textos_no_duplicados.pickle', 'rb') as archivo:
+  textos_no_duplicados = pickle.load(archivo)
 
 # Vectorización
 nlp = spacy.load("es_core_news_sm")
@@ -34,7 +39,7 @@ from sklearn.cluster import KMeans
 
 # El número de clusters debe fijarse de antemano
 #
-num_clusters = 20
+num_clusters = 15
 
 clustering1 = KMeans(n_clusters=num_clusters, init='k-means++', max_iter=1000, n_init=1, verbose=True)
 
@@ -100,9 +105,10 @@ for cluster_id in sorted_docs_per_cluster1:
   ejemplares = clustered_docs1[cluster_id]
   random.shuffle(ejemplares)
   for ejemplar in ejemplares[0:5]:
-    print("\t", segments[ejemplar][0:140], "...")
-
+    print("\t",textos_no_duplicados[referenciasNoticias[ejemplar]][0:140], "...")
   print()
+
+# Guardamos los resultados del clustering (Aunque no vayamos a utilizar todos)
 
 with open('pickle/apartado3/sorted_docs_per_cluster1.pickle', 'wb') as archivo:
   pickle.dump(sorted_docs_per_cluster1, archivo)

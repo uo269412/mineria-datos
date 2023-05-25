@@ -28,9 +28,7 @@ for i in range(len(textos_no_duplicados)):
   sentencias = "\n\n".join(sentencias)
   sentenciasTotales.append(sentencias)
 
-print("- 2.a Segmentada las noticias en sentencias usando spaCy - ")
-
-print("- 2.b Unidas esas sentencias en un único texto de tal modo que entre sentencia y sentencia haya un doble salto de línea -")
+print("- 2. Segmentada las noticias en sentencias usando spaCy - ")
 
 print(texto[0:1000],"...")
 

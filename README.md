@@ -24,13 +24,21 @@
       <li>pip install textacy</li>
       <li>pip install simhash</li>
       <li>python -m spacy download es_core_news_sm</li>
+      <li>pip install fasttext-wheel</li>
     </ul>
   </li>
 </ol>
 
 <h4>Descarga de recursos</h4>
-<p>En el proyecto ya se incluyen los archivos que utilizará el programa. Independientemente, aquí se muestra el enlace de los dos archivos que usará el programa. Se tendrán que descomprimir y dejar en la raíz del proyecto:</p>
+<p>En el proyecto ya se incluyen los archivos que utilizará el programa. Independientemente, aquí se muestra el enlace de los dos archivos que usará el programa. Se tendrán que descomprimir y dejar en la raíz del proyecto el archivo que incluye las noticias con las que se trabajará: </p>
+
+<h3>Estructura del proyecto</h3>
+<p>En la estructura del proyecto podremos encontrar diferentes carpetas y ejecutables</p>
 <ul>
-  <li></li>
-  <li></li>
- </ul>
+  <li>Carpeta datos_adicionales: Contiene datos que genera el programa y que se utilizan para procesar ciertas operaciones. Dentro de esta carpeta se puede diferenciar carpetas con archivos que se generan utilizando escritores de texto, con los datos que se guardan utilizando Pickle</li>
+  <li>Archivos ejecutables .py llamados apartadoX: Estos archivos contienen el código para ejecutar cierta funcionalidad que se pide en el apartado del enunciado. Por ejemplo, en el apartado1.py podemos esperar que se eliminen los documentos cuasi-duplicados porque así se corresponde con el enunciado. Estos archivos contendrán la siguiente funcionalidad:
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+</ul>

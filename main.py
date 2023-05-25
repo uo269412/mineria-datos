@@ -6,7 +6,7 @@ programas = [
     './apartado2-sp.py',
     './apartado2-tt.py',
     './apartado3.py',
-    './apartado4.py'
+    './apartado4-5.py'
 ]
 
 for programa in programas:
