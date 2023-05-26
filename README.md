@@ -1,6 +1,6 @@
-# mineria-datos
+# Ejercicio de minería de datos
 
-<h1>Instalación para ejecutar el programa </h1>
+<h3>Instalación para ejecutar el programa </h3>
 <p>Se necesitará un intérprete de Python para poder ejecutar el programa. El utilizado ha sido Pycharm Community 2022.2.2 (aunque debería valer una versión más actual de este), descargado en el enlace oficial de descargas de Pycharm, <a href="https://www.jetbrains.com/pycharm/download/#section=windows">Enlace de descarga oficial de Pycharm</a>.</p>
 <p>También necesitaremos una versión de Python. En este caso utilizaremos la versión 3.10, que se puede encontrar en <a href="https://www.python.org/downloads/release/python-3100/">Enlace de descarga oficial de Python 3.10</a>. Se recomienda descargar el Windows x86-64-web-based installer y proceder con las instrucciones para la instalación.</p>
 
@@ -35,7 +35,20 @@
 <h3>Estructura del proyecto</h3>
 <p>En la estructura del proyecto podremos encontrar diferentes carpetas y ejecutables</p>
 <ul>
-  <li>Carpeta datos_adicionales: Contiene datos que genera el programa y que se utilizan para procesar ciertas operaciones. Dentro de esta carpeta se puede diferenciar carpetas con archivos que se generan utilizando escritores de texto, con los datos que se guardan utilizando Pickle</li>
+  <li><a href = "https://github.com/uo269412/mineria-datos/tree/main/datos_adicionales">Carpeta datos_adicionales</a>: Contiene datos que genera el programa y que se utilizan para procesar ciertas operaciones. Dentro de esta carpeta se puede diferenciar carpetas con archivos que se generan utilizando escritores de texto, con los datos que se guardan utilizando Pickle
+  <ul>
+  <li><a href = "https://github.com/uo269412/mineria-datos/tree/main/datos_adicionales/apartado4">Carpeta apartado4</a>: Contiene los ficheros que se generan en <a href = "https://github.com/uo269412/mineria-datos/blob/main/apartado4-5.py">apartado4-5.py</a>. Estos se corresponden con dos ficheros.txt; <a href = "https://github.com/uo269412/mineria-datos/blob/main/datos_adicionales/apartado4/conjunto-entrenamiento.txt">conjunto-entrenamiento.txt</a> que será el que contendrá los segmentos etiquetas que se utilizarán para entrenar el modelo, y <a href = "https://github.com/uo269412/mineria-datos/blob/main/datos_adicionales/apartado4/conjunto-testeo.txt">conjunto-testeo.txt</a> que contendrá los segmentos etiquetados con los que se probará el modelo.</li>
+  
+  <li><a href = "https://github.com/uo269412/mineria-datos/tree/main/datos_adicionales/apartado8">Carpeta apartado8</a>: Contiene el fichero ndjson que se genera en <a href = "https://github.com/uo269412/mineria-datos/blob/main/apartado8-d_e-clasificador.py">apartado8-d_e-clasificador.py</a>. Este fichero contendrá línea por línea un objeto que contendrá la noticia, junto a las etiquetas que el modelo le ha asignado y el porcentaje de segmentos que se tienen esa etiqueta en esa noticia. El archivo generado es el siguiente: <a href = "https://github.com/uo269412/mineria-datos/blob/main/datos_adicionales/apartado8/lista-labels.noticias.ndjson">lista-labels.noticias.ndjson</a>.</li>
+    
+  <li><a href = "https://github.com/uo269412/mineria-datos/tree/main/datos_adicionales/pickle">Carpeta pickle</a>: Aquí se contienen varias carpetas (llamadas por el nombre del .py que las genera, junto a archivos .pickle que generan estas, y así poder cargar aquellos archivos que sean necesarios en sucesivos programas. Así también, podemos guardar algunas cosas que pueden variar dependiendo de la ejecución, como por ejemplo los resultados del clustering o lo del modelo, para así poder tener fijos los datos y seguir trabajando con ellos.</li>
+ 
+  </ul>  
+  
+  
+  
+  </li>
+   
   <li>Archivos ejecutables .py llamados apartadoX: Estos archivos contienen el código para ejecutar cierta funcionalidad que se pide en el apartado del enunciado. Por ejemplo, en el apartado1.py podemos esperar que se eliminen los documentos cuasi-duplicados porque así se corresponde con el enunciado. Estos archivos contendrán la siguiente funcionalidad:
     <ul>
       <li></li>
