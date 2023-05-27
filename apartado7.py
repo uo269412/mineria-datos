@@ -6,15 +6,7 @@ from collections import Counter, OrderedDict
 import random
 import pickle
 
-global escritor
-escritor = open("datos_adicionales/apartado7/noticias-negacionista.txt", "w", encoding='utf-8')
-
 lista = list()
-
-
-def escribeLinea(texto=""):
-    escritor.write(texto + "\n")
-
 
 # 7. Cargando las noticias en memoria
 

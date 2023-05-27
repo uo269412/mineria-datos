@@ -13,9 +13,9 @@ params = {
 # más tarde en el fichero apartado8-d_e-clasificador.py, se creará otro modelo con la misma configuración para
 # ponerlo a prueba contra las noticias negacionistas
 
-ruta_entrenamiento = "datos_adicionales/apartado4/conjunto-entrenamiento.txt"
-modelo = fasttext.train_supervised(ruta_entrenamiento, **params)
-ruta_testeo = "datos_adicionales/apartado4/conjunto-testeo.txt"
-result = modelo.test(ruta_testeo)
+modelo = fasttext.train_supervised("datos_adicionales/apartado4/conjunto-entrenamiento.txt", **params)
+result = modelo.test("datos_adicionales/apartado4/conjunto-testeo.txt")
 
-print("Resultados: " + str(result[1]))
+modelo.save_model("datos_adicionales/apartado6/modelo.bin")
+
+print("Resultados de precisión: " + str(result[1]))

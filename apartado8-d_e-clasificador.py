@@ -33,22 +33,10 @@ def calcular_porcentaje(lista, valor):
     return porcentaje
 
 
-labels = ["temperatura_media", "crisis_climática", "hidrógeno_verde", "dióxido_carbono", "transición_energética",
-          "energía_renovable", "emisiones_co2", "olas_calor", "sequía_agua", "efecto_invernadero"]
+labels = ["calentamiento_global", "emisiones_gas", "incendios_forestales",
+          "ola_calor", "subida_nivel_mar", "escasez_agua", "off_topic"]
 
-# Parece que la configuración de epoch = 28 es la que otorga mejores resultados
-params = {
-    'epoch': 28,
-    'lr': 0.1,
-    'dim': 100
-}
-
-ruta_entrenamiento = "datos_adicionales/apartado4/conjunto-entrenamiento.txt"
-modelo = fasttext.train_supervised(ruta_entrenamiento, **params)
-ruta_testeo = "datos_adicionales/apartado4/conjunto-testeo.txt"
-result = modelo.test(ruta_testeo)
-
-print("Precisión: " + str(result[1]))
+modelo = fasttext.load_model("datos_adicionales/apartado6/modelo.bin")
 
 # Comenzamos con la noticia 0, es decir, la primera
 previousValue = 0

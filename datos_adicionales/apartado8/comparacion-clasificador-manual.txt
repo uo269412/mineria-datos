@@ -1,0 +1,111 @@
+Noticia 0
+	Etiquetado manual = off_topic
+	Etiquetado clasificador = off_topic
+	Total de etiquetado por el clasificador
+		Etiqueta = emisiones_gas : 0.1
+		Etiqueta = incendios_forestales : 0.06
+		Etiqueta = subida_nivel_mar : 0.1
+		Etiqueta = escasez_agua : 0.06
+		Etiqueta = off_topic : 0.68
+Noticia 1
+	Etiquetado manual = emisiones_gas
+	Etiquetado clasificador = off_topic
+	Total de etiquetado por el clasificador
+		Etiqueta = emisiones_gas : 0.38
+		Etiqueta = incendios_forestales : 0.12
+		Etiqueta = off_topic : 0.5
+Noticia 2
+	Etiquetado manual = off_topic
+	Etiquetado clasificador = off_topic
+	Total de etiquetado por el clasificador
+		Etiqueta = emisiones_gas : 0.17
+		Etiqueta = incendios_forestales : 0.14
+		Etiqueta = ola_calor : 0.06
+		Etiqueta = subida_nivel_mar : 0.03
+		Etiqueta = escasez_agua : 0.17
+		Etiqueta = off_topic : 0.44
+Noticia 3
+	Etiquetado manual = emisiones_gas
+	Etiquetado clasificador = emisiones_gas
+	Total de etiquetado por el clasificador
+		Etiqueta = calentamiento_global : 0.03
+		Etiqueta = emisiones_gas : 0.34
+		Etiqueta = incendios_forestales : 0.24
+		Etiqueta = ola_calor : 0.03
+		Etiqueta = off_topic : 0.34
+Noticia 4
+	Etiquetado manual = emisiones_gas
+	Etiquetado clasificador = emisiones_gas
+	Total de etiquetado por el clasificador
+		Etiqueta = calentamiento_global : 0.05
+		Etiqueta = emisiones_gas : 0.3
+		Etiqueta = incendios_forestales : 0.25
+		Etiqueta = escasez_agua : 0.1
+		Etiqueta = off_topic : 0.3
+Noticia 5
+	Etiquetado manual = off_topic
+	Etiquetado clasificador = off_topic
+	Total de etiquetado por el clasificador
+		Etiqueta = calentamiento_global : 0.1
+		Etiqueta = incendios_forestales : 0.1
+		Etiqueta = ola_calor : 0.1
+		Etiqueta = subida_nivel_mar : 0.03
+		Etiqueta = escasez_agua : 0.26
+		Etiqueta = off_topic : 0.42
+Noticia 6
+	Etiquetado manual = off_topic
+	Etiquetado clasificador = off_topic
+	Total de etiquetado por el clasificador
+		Etiqueta = calentamiento_global : 0.11
+		Etiqueta = emisiones_gas : 0.07
+		Etiqueta = incendios_forestales : 0.07
+		Etiqueta = ola_calor : 0.04
+		Etiqueta = subida_nivel_mar : 0.19
+		Etiqueta = off_topic : 0.52
+Noticia 7
+	Etiquetado manual = off_topic
+	Etiquetado clasificador = off_topic
+	Total de etiquetado por el clasificador
+		Etiqueta = calentamiento_global : 0.04
+		Etiqueta = emisiones_gas : 0.12
+		Etiqueta = incendios_forestales : 0.04
+		Etiqueta = ola_calor : 0.04
+		Etiqueta = subida_nivel_mar : 0.2
+		Etiqueta = escasez_agua : 0.08
+		Etiqueta = off_topic : 0.48
+Noticia 8
+	Etiquetado manual = incendios_forestales
+	Etiquetado clasificador = incendios_forestales
+	Total de etiquetado por el clasificador
+		Etiqueta = incendios_forestales : 0.38
+		Etiqueta = ola_calor : 0.19
+		Etiqueta = subida_nivel_mar : 0.12
+		Etiqueta = escasez_agua : 0.06
+		Etiqueta = off_topic : 0.25
+Noticia 9
+	Etiquetado manual = off_topic
+	Etiquetado clasificador = ola_calor
+	Total de etiquetado por el clasificador
+		Etiqueta = calentamiento_global : 0.02
+		Etiqueta = emisiones_gas : 0.14
+		Etiqueta = incendios_forestales : 0.12
+		Etiqueta = ola_calor : 0.31
+		Etiqueta = subida_nivel_mar : 0.05
+		Etiqueta = escasez_agua : 0.05
+		Etiqueta = off_topic : 0.31
+Resultados: 
+	Apariciones de etiquetas (de forma manual) en las 10 noticias:
+		emisiones_gas : 0.3
+		incendios_forestales : 0.1
+		off_topic : 0.6
+Apariciones de etiquetas (dadas por el clasificador) en las 10 noticias:
+		emisiones_gas : 0.2
+		incendios_forestales : 0.1
+		ola_calor : 0.1
+		off_topic : 0.6
+	Aciertos del clasificador: 
+	Resultados totales, porcentaje de acierto = 0.8, precisión del modelo dado utilizando el conjunto de testeo = 0.9686558167570826
+		Porcentaje de acierto de la etiqueta emisiones_gas : 1.0
+		Porcentaje de acierto de la etiqueta incendios_forestales : 1.0
+		Porcentaje de acierto de la etiqueta: ola_calor : 0
+		Porcentaje de acierto de la etiqueta off_topic : 0.67

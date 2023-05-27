@@ -34,16 +34,16 @@ def obtenerFormatoNoticia(label, ejemplares):
 # 4. y 5. Ponemos el label a los clústeres según se ha considerado. Escogiendo diez clústeres y poniéndole un label
 # acorde a la información proporcionada
 
-obtenerFormatoNoticia("temperatura_media", clustered_docs1[1])
-obtenerFormatoNoticia("crisis_climática", clustered_docs1[1])
-obtenerFormatoNoticia("hidrógeno_verde", clustered_docs1[7])
-obtenerFormatoNoticia("dióxido_carbono", clustered_docs1[8])
-obtenerFormatoNoticia("transición_energética", clustered_docs1[12])
-obtenerFormatoNoticia("energía_renovable", clustered_docs1[14])
-obtenerFormatoNoticia("emisiones_co2", clustered_docs1[15])
-obtenerFormatoNoticia("olas_calor", clustered_docs1[17])
-obtenerFormatoNoticia("sequía_agua", clustered_docs1[21])
-obtenerFormatoNoticia("efecto_invernadero", clustered_docs1[22])
+
+obtenerFormatoNoticia("calentamiento_global", clustered_docs1[7])
+obtenerFormatoNoticia("emisiones_gas", clustered_docs1[10])
+obtenerFormatoNoticia("incendios_forestales", clustered_docs1[12])
+obtenerFormatoNoticia("ola_calor", clustered_docs1[14])
+obtenerFormatoNoticia("subida_nivel_mar", clustered_docs1[16])
+obtenerFormatoNoticia("emisiones_gas", clustered_docs1[19])
+obtenerFormatoNoticia("escasez_agua", clustered_docs1[20])
+
+obtenerFormatoNoticia("off_topic", clustered_docs1[4])
 
 # 80% para el entrenamiento
 
